@@ -1,0 +1,36 @@
+.Main-text-Ex {
+  color: #5433d6;
+  font-size: 32px !important;
+  padding: 10px;
+  font-weight: bold !important;
+}
+
+.Text-Type-Ex {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: right;
+  color: #000;
+  padding: 0 50px;
+  font-family: Kalameh !important;
+
+  @media (max-width: 970px) {
+    padding: 0 25px;
+  }
+}
+
+.Main-text-Intro {
+  color: #5433d6;
+  font-size: 24px !important;
+  padding: 10px;
+  font-weight: bold !important;
+}
+
+.Green-link {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #5433d6;
+
+  &:hover {
+    color: #38267e;
+  }
+}

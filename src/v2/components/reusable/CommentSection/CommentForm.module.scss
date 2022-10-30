@@ -1,0 +1,48 @@
+@import "../../../styles/Functions.module.scss";
+
+
+@mixin inputStyle {
+    &>div {
+        border-radius: var(--var-border-radius-large);
+    }
+
+    margin: .8em 0;
+    border-radius: var(--var-border-radius-large) !important;
+}
+
+@mixin SubmitButton {
+    @include Button();
+    background-color: var(--var-byzantine-blue);
+    color: var(--var-blue-white);
+}
+
+.Form {
+    background-color: var(--var-white-smoke) !important;
+    padding: 1.4em;
+    overflow: auto !important;
+
+    .Title {
+        color: var(--var-space-cadet);
+        font-size: var(--var-font-size-large);
+        font-weight: bolder;
+        margin: 0.5em 0;
+        font-family: Kalameh, sans-serif !important;
+    }
+
+    .FormInput {
+        background-color:var(--var-comment-form);
+        @include inputStyle;
+
+    }
+    .SubmitBtn {
+        margin: 1em 0;
+        @include SubmitButton;
+    }
+}
+
+.Warn {
+    background-color:var(--var-comment-form);
+    text-align: center;
+    font-size: var(--var-font-size-normal) !important;
+    padding: 1em;
+}

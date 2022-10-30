@@ -1,0 +1,67 @@
+.swiper {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 1em 0em;
+    max-height: 50vh;
+    padding: 0.2em;
+    background-color: transparent;
+    overflow: hidden;
+
+    @media screen and (min-width: 900px) {
+        margin-top: 0em;
+        min-height: 60vh !important;
+    }
+}
+
+.swiper-pagination-horizontal {
+    width: 8em !important;
+    right: 5em !important;
+    bottom: 2em !important;
+}
+
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 5px;
+    border-radius: var(--var-border-radius-large);
+    text-align: right;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: var(--var-space-cadet-light);
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    background: var(--var-dark-space-cadet);
+}
+
+.swiper-button-next {
+    top: 85%;
+}
+
+.swiper-button-prev {
+    top: 84%;
+}
+
+.swiper-button-next {
+    right: 10em !important;
+    left: auto !important;
+
+    &::after {
+        content: url("../../../assets/images/Icons/Arrow.svg") !important;
+    }
+
+}
+
+.swiper-button-prev {
+    right: 5em !important;
+    left: auto !important;
+    transform: rotate(180deg);
+
+    &::after {
+        content: url("../../../assets/images/Icons/Arrow.svg") !important;
+    }
+
+}

@@ -1,0 +1,53 @@
+@mixin commontitle {
+    background-image: linear-gradient(225deg, rgba(178, 145, 210, 1) 10%, rgba(138, 173, 228, 1) 100%);
+    font-weight: bolder !important;
+    width: fit-content;
+    padding: 1em;
+    font-family: Kalameh, sans-serif !important;
+}
+
+@mixin commonstyle {
+    font-family: Kalameh, sans-serif !important;
+    font-weight: bolder !important;
+    text-align: right !important;
+}
+
+.buttonLog {
+    @include commonstyle();
+    @include commontitle();
+    width: 50% !important;
+    font-size: 1.5em !important;
+    color: #fff !important;
+    align-self: center;
+    margin-top: 2em !important;
+
+    @media screen and (min-width: 600px) {
+        width: 20% !important;
+
+    }
+}
+
+.items {
+    @include commonstyle();
+}
+
+.titel {
+    @include commontitle();
+    border-radius: 2em;
+}
+
+.preTitel {
+    @include commonstyle();
+    color: #4c92a5;
+}
+
+.table {
+    @include commontitle();
+    border-radius: 60px 0px 0px 60px;
+    min-width: 60% !important;
+
+    @media screen and (min-width: 600px) {
+        min-width: 90% !important;
+
+    }
+}

@@ -1,0 +1,47 @@
+@import "../../../../../styles/Functions.module.scss";
+
+.tabs {
+  line-height: 4em;
+  text-align: center;
+  width: 100%;
+  background-color: inherit;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  font-size: var(--var-font-size-large);
+  color: var(--var-davys-gray);
+  z-index: 4;
+
+  @media screen and (max-width:465px) {
+    font-size: var(--var-font-size-normal);
+  }
+}
+
+.activeTabs {
+  background: var(--var-white);
+  box-shadow: 0 5px 20px 0 rgba(90, 123, 179, 0.1);
+  z-index: 4;
+  color: var(--var-black);
+  font-weight: bold;
+}
+
+.tabsContainer {
+  flex-grow: 1;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 0 rgba(90, 123, 179, 0.1);
+  z-index: 5;
+}
+
+.contentTabs {
+  @include contentTabs;
+  padding: 2em 2.3em;
+}
+
+.activeContent {
+  display: block;
+}

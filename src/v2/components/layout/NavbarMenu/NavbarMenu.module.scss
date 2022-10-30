@@ -1,0 +1,27 @@
+.NavbarMenu {
+
+    .navButoon {
+        color: #1E2756 !important;
+        font-weight: bolder !important;
+        font-size: var(--var-font-size-large) !important;
+        margin: 0 10px 0 10px !important;
+        font-family: Kalameh, sans-serif;
+        
+    }
+
+    .navbar {
+        transition: .2s ease-in-out;
+        height: 7.8em;
+        width: 100%;
+        background-color: var(--var-white) !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        padding-left: 30px;
+        box-shadow: -1px 4px 9px -4px rgba(59, 59, 59, 0.75);
+        -webkit-box-shadow: -1px 4px 9px -4px rgba(59, 59, 59, 0.75);
+        -moz-box-shadow: -1px 4px 9px -4px rgba(59, 59, 59, 0.75);
+    }
+
+}

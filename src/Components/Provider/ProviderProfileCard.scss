@@ -1,0 +1,73 @@
+$color: #5433d6;
+
+.profile {
+  .image {
+    margin: 8px 0 20px 0;
+    .circle-1 {
+      position: absolute;
+      box-sizing: border-box;
+      width: 114%;
+      height: 114%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: $color $color $color transparent;
+      border-radius: 50%;
+      transition: all 1.5s ease-in-out;
+      @media screen and (max-width: 1140px) {
+        width: 111%;
+        height: 111%;
+        top: 5px;
+      }
+      @media screen and (max-width: 368px) {
+        top: 6px;
+      }
+      @media screen and (max-width: 270px) {
+        border-color: $color;
+        top: 8px;
+      }
+    }
+    .circle-2 {
+      @extend .circle-1;
+      width: 109%;
+      height: 109%;
+      border-color: $color transparent $color $color;
+      top: 5px;
+      @media screen and (max-width: 1140px) {
+        top: 9px;
+        width: 105%;
+        height: 105%;
+      }
+      @media screen and (max-width: 368px) {
+        top: 9px;
+      }
+      @media screen and (max-width: 270px) {
+        display: none;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .circle-1 {
+        transform: rotate(360deg);
+      }
+      .circle-2 {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+}
+.online-tag {
+  font-size: 8px;
+  color: #39ac4d;
+  @media screen and (max-width: 440px) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .circle-1 {
+    display: none;
+  }
+  .circle-2 {
+    display: none;
+  }
+}

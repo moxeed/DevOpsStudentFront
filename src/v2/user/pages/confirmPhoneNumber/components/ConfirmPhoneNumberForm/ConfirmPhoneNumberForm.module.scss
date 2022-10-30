@@ -1,0 +1,25 @@
+@import "../../../../../styles/Functions.module.scss";
+
+.pishi {
+  @include pishi;
+}
+
+.confirmPhoneNumberContainer {
+  @include container;
+
+  .confirmPhoneNumberTitle {
+    @include title;
+  }
+
+  .primaryButton {
+    @include primaryButton;
+  }
+
+  .secondaryButton {
+    @include secondaryButton;
+  }
+
+  .otp {
+    @include otp;
+  }
+}

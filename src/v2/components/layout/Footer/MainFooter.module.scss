@@ -1,0 +1,38 @@
+.Footer {
+    margin-top: 0.5em;
+    text-align: left;
+    height: fit-content;
+    background-color: var(--var-blue-white);
+
+    .container {
+        background-color: var(--var-whiteSmoke);
+
+        @media screen and (max-width: 850px) {
+            width: 100%;
+            margin: 10px auto;
+        }
+
+    }
+
+    .title {
+        padding-bottom: 5px;
+        padding-left: 5px;
+        font-weight: bold;
+        text-align: right;
+        font-family: Kalameh, sans-serif;
+    }
+
+    .link {
+        font-weight: bold;
+        text-align: right;
+        color: var(--var-space-cadet);
+        font-size: var(--var-font-size-small);
+    }
+
+
+    .navbar {
+        padding: 1em;
+        background-color: var(--var-space-cadet);
+        text-align: center;
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../../../../../styles/Functions.module.scss";
+
+.inputRounded {
+  @include inputRounded;
+}
+
+.primaryButton {
+  @include primaryButton;
+  border: none;
+  cursor: pointer;
+}
+
+.forgotPassword {
+  @include forgotPassword;
+}

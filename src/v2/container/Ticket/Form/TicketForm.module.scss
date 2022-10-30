@@ -1,0 +1,66 @@
+@import "../../../styles/Functions.module.scss";
+
+@mixin inputStyle {
+    &>div {
+        border-radius: var(--var-border-radius-large);
+    }
+
+    margin: .8em 0;
+    border-radius: var(--var-border-radius-large) !important;
+}
+
+@mixin SubmitButton {
+    @include Button();
+    background-color: var(--var-byzantine-blue);
+    color: var(--var-blue-white);
+}
+
+.TicketForm {
+    padding: 1.4em;
+    overflow: auto !important;
+
+    .TicketTitle {
+        color: var(--var-space-cadet);
+        font-size: var(--var-font-size-large);
+        font-weight: bolder;
+        margin: 0.5em 0;
+        font-family: Kalameh, sans-serif !important;
+    }
+
+    .ActiveInput {
+        background-color: #5560d825;
+        @include inputStyle;
+    }
+
+    .FormInput {
+        background-color: #f9f8f885;
+        @include inputStyle;
+
+    }
+
+    .HighlightedText {
+        color: var(--var-tropical-indigo);
+        margin: 0.8em 0;
+    }
+
+    .UnderlinedText {
+        color: var(--var-tropical-indigo);
+        text-decoration: underline;
+        margin: 0.8em 0;
+
+    }
+
+    .SupportInfoText {
+        margin: 2em 0;
+        color: rgba(29, 41, 84, 0.5);
+        font-size: 1.05em;
+        text-align: justify;
+        font-weight: bold;
+        font-family: Kalameh !important;
+    }
+
+    .SubmitBtn {
+        margin: 1em 0;
+        @include SubmitButton;
+    }
+}

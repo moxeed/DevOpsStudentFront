@@ -1,0 +1,70 @@
+@import "../../../styles/Functions.module.scss";
+
+.ProductSelesction {
+    min-height: 90vh;
+    margin-top: 7em;
+
+    .FilterSection {
+        margin: 3em 0.5em;
+
+        .FilterHeader {
+            background-color: var(--var-white);
+            border-radius: 50px 0px 0px 0px / 50px 0px 0px 0px;
+            text-align: center;
+            padding: 1em 3em;
+            font-size: var(--var-font-size-large);
+            font-weight: bold;
+
+        }
+    }
+
+    .SorterSection {
+        background-color: var(--var-platinum);
+        display: flex;
+        align-items: center;
+        padding: 5;
+        border-radius: var(--var-border-radius);
+    }
+
+    .SorterButton {
+        padding: 0.5em 1.5em;
+        min-width: 7.5em !important;
+        width: min-content;
+        font-weight: bold;
+        font-size: var(--var-font-size-small);
+
+        @media screen and (min-width: 512px) {
+            min-width: 6em !important;
+            width: min-content;
+        }
+    }
+
+    .ActiveButton {
+        color: var(--var-white);
+        background: var(--var-byzantine-blue);
+
+        &:hover {
+            color: var(--var-dark-byzantine-blue);
+            background-color: var(--var-white-smoke);
+        }
+    }
+
+    .DeactiveButton {
+        background-color: var(--var-white);
+        color: var(--var-byzantine-blue);
+        border: 1px solid var(--var-byzantine-blue);
+
+    }
+
+    .SearchInput {
+        height: 3em;
+        @include inputRounded;
+
+        .SearchIcon {
+            background-color: var(--var-byzantine-blue);
+            color: var(--var-davys-gray);
+            cursor: pointer;
+        }
+    }
+
+}

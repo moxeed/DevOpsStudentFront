@@ -1,0 +1,124 @@
+.blob-nav {
+  height: 120px;
+  width: 120px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: none;
+}
+
+.nav-item {
+  width: 53px;
+  height: 53px;
+  margin-left: -18px;
+  margin-top: -22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item:hover {
+  color: #5433d6;
+}
+
+.toggle {
+  width: 100px;
+  height: 100px;
+  margin-left: -40px;
+  margin-top: -20px;
+  z-index: 2;
+}
+
+.toggle:hover {
+  -webkit-animation: bounce 1s cubic-bezier(0, .5, .50, 1);
+  animation: bounce 1s cubic-bezier(0, .5, .5, 1);
+}
+
+.nav-item,
+.toggle {
+  position: absolute;
+  background: linear-gradient(180deg, #5433d6 0%, #38267e 100%);
+  bottom: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all .2s cubic-bezier(0, .42, .42, 1);
+  -moz-transition: all .2s cubic-bezier(0, .42, .42, 1);
+  -o-transition: all .2s cubic-bezier(0, .42, .42, 1);
+  transition: all .2s cubic-bezier(0, .42, .42, 1);
+}
+
+.nav-item {
+  left: 45%;
+}
+
+nav .slide-out:nth-child(1) {
+  -webkit-transform: translate(100px, -20px) scale(1.2);
+  transform: translate(100px, -20px) scale(1.2);
+}
+
+nav .slide-out:nth-child(2) {
+  -webkit-transform: translate(180px, -40px);
+  transform: translate(180px, -40px);
+}
+
+nav .slide-out:nth-child(3) {
+  -webkit-transform: translate(-100px, -20px) scale(1.2);
+  transform: translate(-100px, -20px) scale(1.2);
+}
+
+nav .slide-out:nth-child(4) {
+  -webkit-transform: translate(-180px, -40px) scale(1.2);
+  transform: translate(-180px, -40px);
+}
+
+@media screen and (max-width: 650px) {
+  nav .slide-out:nth-child(1) {
+    -webkit-transform: translate(90px, -35px) scale(1.2);
+    transform: translate(90px, -35px) scale(1.2);
+  }
+
+  nav .slide-out:nth-child(2) {
+    -webkit-transform: translate(40px, -100px);
+    transform: translate(40px, -100px);
+  }
+
+  nav .slide-out:nth-child(3) {
+    -webkit-transform: translate(-90px, -35px) scale(1.2);
+    transform: translate(-90px, -35px) scale(1.2);
+  }
+
+  nav .slide-out:nth-child(4) {
+    -webkit-transform: translate(-40px, -100px) scale(1.2);
+    transform: translate(-40px, -100px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+
+  30% {
+    -webkit-transform: scale(0.98);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(1.1);
+  }
+
+  30% {
+    transform: scale(0.98);
+  }
+}
+
+.MuiToolbar-regular {
+  min-height: 78px;
+}

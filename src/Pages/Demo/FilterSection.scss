@@ -1,0 +1,40 @@
+.menuStyle {
+  direction: ltr;
+  border: none;
+  background-color: hsl(0, 0%, 97%);
+  color: black;
+  .ant-menu-submenu-arrow {
+    color: gray;
+    position: absolute;
+    left: 5px;
+  }
+  .ant-menu-submenu-title {
+    text-align: right;
+    font-weight: bold;
+    color: gray;
+  }
+  .ant-menu-submenu-active {
+    color: chartreuse !important;
+  }
+
+  .ant-checkbox-wrapper {
+    direction: rtl;
+  }
+  .ant-menu-item .ant-menu-item-only-child .ant-menu-item-active {
+    left: 90px;
+  }
+}
+.chekboxStyle {
+  text-align: right;
+  color: gray;
+}
+
+.subMenuStyle {
+  background-color: white;
+  color: black;
+  margin: 10;
+  border-radius: 8px;
+  .ant-menu-sub.ant-menu-inline {
+    background-color: white;
+  }
+}

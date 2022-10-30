@@ -1,0 +1,16 @@
+.text{
+    position: relative;
+    mark {
+    background-color:#EFBA3380;
+    color:  #1D2954;
+    text-decoration: underline;
+    font-size: var(--var-font-size-normal);
+    font-weight: var(--var-font-weight);
+  }
+}
+.time{
+    position: absolute;
+    bottom: -2.5em;
+    color: #959494;
+    direction: ltr;
+} 

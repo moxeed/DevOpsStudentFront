@@ -1,0 +1,31 @@
+@import "../../../styles/Functions.module.scss";
+@import "../../../components/reusable/BlueButton/BlueButton.module.scss";
+
+.content {
+    align-items: baseline;
+    text-align: right;
+    padding: .2em 1em;
+
+    .name {
+        font-weight: bold;
+        font-size: var(--var-font-size-normal) !important;
+
+    }
+    .date {
+        color: var(--var-space-cadet-light);
+        margin: 0.2em 0;
+        font-size: var(--var-font-size-small) !important;
+    }
+    .answer{
+       @extend .date;
+      
+    }
+}
+
+.BButton {
+    @include ButtonBase;
+    width: 50em !important;
+    color: var(--var-white) !important;
+    background: var(--var-byzantine-blue) !important;
+    border-radius: var(--var-border-radius) !important;
+  }

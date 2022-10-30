@@ -1,0 +1,143 @@
+.Button {
+  padding: 10px 14px !important;
+  background-color: #5433d6 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  margin: 8px !important;
+  font-size: 18px !important;
+  &:hover {
+    background-color: #38267e !important;
+    box-shadow: none !important;
+  }
+  &:disabled {
+    background: #fff !important;
+    color: rgb(153, 152, 152) !important;
+  }
+}
+
+.RedirectLink {
+  //link
+  margin: 5px;
+  height: 30px;
+  border-bottom: #5433d6 1px solid;
+  padding: 5px;
+  font-size: 15px;
+  box-shadow: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #5433d6;
+  &:hover {
+    color: #38267e;
+  }
+  &.disabled {
+    color: rgb(153, 152, 152);
+    cursor: auto;
+    border: 1px solid rgb(153, 152, 152);
+  }
+}
+
+.Btn-tab {
+  //all Toggle buttons
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5433d6;
+  border-radius: 10px;
+  height: 30px;
+  transition: 0.4s ease-out;
+  padding: 12px;
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid #5433d6;
+  cursor: pointer;
+  min-width: 110px;
+  @media (max-width: 970px) {
+   p{
+     font-size: 11px;
+   }
+  }
+  &.active {
+    background-color: #5433d6;
+    color: #ffffff;
+    border: 1px solid transparent;
+    font-weight: 100;
+  }
+  &.disabled {
+    border-radius: 10px;
+    color: rgb(153, 152, 152);
+    cursor: auto;
+    border: 1px solid rgb(153, 152, 152);
+  }
+  .MuiTypography-displayBlock {
+    font-weight: bold;
+  }
+}
+
+.Btn-Quiz {
+  //all Toggle buttons
+  margin: 1px 1px;
+  color: #5433d6;
+  border-radius: 12px;
+  height: 18px;
+  transition: 0.1s ease-out;
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid #5433d6;
+  cursor: pointer;
+  width: 28px;
+  &.correct {
+    background-color: #5433d6;
+    color: #ffffff;
+    border: 1px solid transparent;
+  }
+  &.wrong {
+    background-color: #e25959;
+    color: #ffffff;
+    border: 1px solid transparent;
+  }
+  &.disabled {
+    color: rgb(153, 152, 152);
+    cursor: auto;
+    border: 1px solid rgb(153, 152, 152);
+  }
+}
+
+.MuiButton-label {
+  height: 12px;
+}
+
+.wrap-important {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-important {
+  min-width: 180px;
+  min-height: 20px;
+  color: #fff;
+  background: #5433d6;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  margin: 15px;
+  &:hover {
+    background-color: #38267e;
+  }
+}
+
+.button-important:hover {
+  transform: translateY(-6px);
+}
+
+.linkbutton{
+  @extend .button-important;
+  min-width: 90px ;
+}
+
+

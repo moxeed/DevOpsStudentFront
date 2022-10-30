@@ -1,0 +1,119 @@
+@import "../../../styles/Functions.module.scss";
+
+@mixin auth-page-form-layout {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.authPageContainer {
+  @include container;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+
+  .authPageForm {
+    @include auth-page-form-layout;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: none;
+    width: 90%;
+    max-width: 420px;
+    padding: 0 .5em;
+    bottom: 0;
+  }
+
+  .componentContainer {
+    max-width: 450px;
+    width: 100%;
+    display: grid;
+    position: relative;
+  }
+
+  .mobileBanner {
+    width: 100%;
+  }
+
+  .formIntro {
+    background-color: var(--var-googooli);
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+
+  .divContainer {
+    position: relative;
+  }
+
+  .formIntroDiv {
+    background-color: var(--var-blue-white);
+    text-align: center;
+    margin: 3em;
+    padding: 4em 0;
+    height: min-content;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 50%;
+    border-radius: var(--var-border-radius);
+  }
+
+  .introTitle {
+    color: var(--var-cosmic-cobalt);
+    margin: 0 0 1em 0;
+    font-size: var(--var-font-size-large);
+    font-weight: bold;
+  }
+
+  .intro {
+    font-size: var(--var-font-size-normal);
+    padding: 0 10%;
+    text-align: center;
+  }
+
+  .introImg {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1264px) {
+    .authPageForm {
+      @include auth-page-form-layout;
+      width: 98%;
+      padding: 0 .2em;
+
+    }
+
+    .introTitle {
+      font-size: var(--var-font-size-normal);
+    }
+
+    .formIntroDiv {
+      padding: 2em 0;
+    }
+
+    .intro {
+      font-size: var(--var-font-size-normal);
+      padding: 0 1em;
+    }
+  }
+
+  .helpText {
+    margin: 2em 1em;
+    text-align: center;
+    line-height: 2em;
+    color: var(--var-space-cadet-light);
+    font-weight: bold;
+  }
+
+}

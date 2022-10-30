@@ -1,0 +1,19 @@
+.ColoredTitle {
+    width: 9em !important;
+    border-radius: 50px 0px 0px 0px / 50px 0px 0px 0px;
+    height: 6em;
+    position: relative;
+    white-space: nowrap;
+    overflow: visible;
+    line-break: strict;
+    white-space: nowrap;
+}
+
+.ColoredTitleText {
+    z-index: 1;
+    margin-right: 35% !important;
+    word-spacing: 5px;
+    font-size: var(--var-font-size-large) !important;
+    color: #2d394b !important;
+    font-weight: bold !important;
+}

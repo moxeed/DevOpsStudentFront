@@ -1,0 +1,64 @@
+.notFoundRoot {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 75%;
+  justify-content: center;
+  place-items: center;
+  min-height: 80vh;
+
+  @media (max-width: 970px) {
+    grid-template-columns: 100%;
+    background-size: contain;
+  }
+
+  .paper {
+    border: none;
+    padding: 2em;
+    box-shadow: none !important;
+    text-align: center;
+
+  }
+
+  .title {
+    color: var(--var-space-cadet);
+    font-weight: var(--var-font-weight);
+    text-align: justify;
+    text-justify: inter-word;
+    width: 100%;
+    max-width: 40em;
+    margin: 0.5em auto;
+
+    @media (max-width: 670px) {
+      max-width: 20em;
+    }
+  }
+
+  h1.title {
+    font-size: var(--var-font-size-large);
+    text-align: center;
+  }
+
+  h2.title {
+    font-size: var(--var-font-size-normal);
+  }
+
+  .button {
+    color: var(--var-white);
+    background-color: var(--var-byzantine-blue);
+    padding: 1.5em 3em;
+    width: fit-content;
+    max-width: 30em;
+    margin: 1em auto;
+    border-radius: var(--var-border-radius);
+
+    &:hover {
+      background-color: var(--var-dark-byzantine-blue);
+    }
+
+    @media (max-width: 670px) {
+      max-width: 28em;
+    }
+  }
+}

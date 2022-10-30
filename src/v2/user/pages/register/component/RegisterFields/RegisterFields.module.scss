@@ -1,0 +1,29 @@
+@import "../../../../../styles/Functions.module.scss";
+
+.pishi {
+  @include pishi;
+}
+
+.registerFieldsContainer {
+  @include container;
+
+  .registerFieldsTitle {
+    @include title;
+  }
+
+  .primaryButton {
+    @include primaryButton;
+  }
+
+  .inputRounded {
+    @include inputRounded;
+  }
+
+  .forgotPassword {
+    @include forgotPassword;
+  }
+
+  .otp {
+    @include otp;
+  }
+}

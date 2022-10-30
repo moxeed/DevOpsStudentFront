@@ -1,0 +1,21 @@
+.AboutAppContainer {
+	position: relative;
+	margin-bottom: 20;
+	@media screen and (max-width: 600px) {
+		margin-bottom: 0;
+	}
+
+	.text {
+		margin-bottom: 15px;
+		line-height: 36px !important;
+		color: var(--var-space-cadet);
+		text-align: justify;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.CheckCircleOutlineIcon {
+	vertical-align: middle;
+	color: var(--var-byzantine-blue);
+}

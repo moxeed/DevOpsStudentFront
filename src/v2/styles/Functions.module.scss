@@ -1,0 +1,196 @@
+//Local Styles
+
+@mixin buttonBase {
+  box-shadow: none;
+  width: 100% !important;
+  height: 55px;
+  font-size: var(--var-font-size-normal);
+  border-radius: var(--var-border-radius);
+  margin: 0;
+  font-family: -apple-system, Kalameh, KalamehBold, KalamehThin, KalamehNum,
+    Ubuntu, MainKalameh, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+@mixin tabBase {
+  background: var(--var-white);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+//Global Styles
+
+@mixin title {
+  color: var(--var-space-cadet);
+  font-weight: bold;
+  font-size: var(--var-font-size-large);
+}
+
+@mixin text {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: var(--var-font-size-normal);
+  color: var(--var-dark-space-cadet);
+  text-indent: 0.3em;
+  margin: 0;
+}
+
+@mixin container {
+  width: 100%;
+  min-height: max-content;
+  margin-left: 0;
+}
+
+@mixin pishi {
+  @include tabBase;
+  display: flex;
+  align-items: center;
+  border-radius: 0 !important;
+}
+
+@mixin contentTabs {
+  @include tabBase;
+  display: none;
+  border-radius: 0 0 10px 10px;
+}
+
+@mixin inputRounded {
+  &>div {
+    border-radius: var(--var-border-radius) !important;
+  }
+
+  &>fieldset {
+    &:hover {
+      border: 2px solid var(--var-googooli);
+    }
+  }
+
+  &>label {
+    color: var(--var-marengo);
+    font-size: var(--var-font-size-large) !important;
+
+    @media screen and (max-width:465px) {
+      font-size: var(--var-font-size-normal);
+    }
+  }
+}
+
+@mixin forgotPassword {
+  color: var(--var-byzantine-blue);
+  font-size: var(--var-font-size-small);
+  font-weight: bold;
+
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1.5px var(--var-byzantine-blue);
+    transform: scaleX(0);
+    transition: transform 400ms ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+@mixin primaryButton {
+  @include buttonBase;
+  background-color: var(--var-byzantine-blue);
+  color: var(--var-white);
+  font-size: var(--var-font-size-normal) !important;
+
+  @media screen and (max-width:465px) {
+    font-size: var(--var-font-size-small);
+  }
+
+  &:hover {
+    background-color: var(--var-dark-byzantine-blue);
+  }
+}
+
+@mixin secondaryButton {
+  @include buttonBase;
+  background-color: var(--var-marengo);
+  color: var(--var-white);
+
+  &:hover {
+    background-color: var(--var-light-marengo);
+  }
+}
+
+@mixin otp {
+  width: 4rem !important;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: var(--var-border-radius);
+  border: 2px solid var(--var-byzantine-blue) !important;
+  color: var(--var-byzantine-blue);
+  margin: 0.5em 0;
+}
+
+@mixin Button {
+  border-radius: var(--var-border-radius-large) !important;
+  background-color: var(--var-byzantine-blue);
+  color: var(--var-platinum) !important;
+  font-size: var(--var-font-size-normal) !important;
+  min-width: 170px !important;
+  max-height: 45px;
+  margin-bottom: 20px !important;
+  padding: 7px !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: var(--var-font-size-small);
+  }
+}
+
+@mixin OutlineButton {
+  @include Button();
+  background-color: var(--var-platinum);
+  border: solid 1px var(--var-byzantine-blue);
+  color: var(--var-byzantine-blue);
+}
+
+@mixin TitleBackground($color) {
+  position: absolute;
+  background-color: $color;
+  top: 0;
+  right: 0;
+  width: 131px;
+  height: 82px;
+  border-radius: 50px 0 0 0px / 50px 0px 0px 0px;
+
+  @media screen and (max-width: 600px) {
+    width: 45px;
+    height: 30px;
+  }
+}
+
+@mixin MainTitle {
+  position: absolute;
+  font-weight: var(--var-font-weight) !important;
+  z-index: 1;
+  top: 30px;
+  right: 6%;
+  color: var(--var-space-cadet);
+
+  @media screen and (max-width: 600px) {
+    top: 4px;
+  }
+}
+
+
+@mixin cardButton {
+  min-width: 4em;
+  font-size: 1em;
+  font-family: -apple-system, Kalameh, KalamehBold, KalamehThin, KalamehNum,
+    Ubuntu, MainKalameh, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+
+  @media screen and (min-width: 600px) {
+    min-width: 6em;
+    font-size: var(--var-font-size-small);
+  }
+}

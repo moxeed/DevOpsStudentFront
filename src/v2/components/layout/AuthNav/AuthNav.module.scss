@@ -1,0 +1,10 @@
+.navButoon {
+    color: #1E2756 !important;
+    font-weight: bolder !important;
+    font-size: var(--var-font-size-normal) !important;
+    margin: 10px 10px 0 10px !important;
+
+    @media screen and (max-width: 600px) {
+        font-size: var(--var-font-size-small) !important;
+    }
+}

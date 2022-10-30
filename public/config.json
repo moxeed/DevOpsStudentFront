@@ -1,0 +1,10 @@
+{
+  "API_ORIGINAL": "https://api.bamis.ir",
+  "API_BASE": "http://dev.bamis.ir/api/v1",
+  "API_BASE_V2": "http://dev.bamis.ir/api/v2",
+  "EXAM_BASE": "http://api.bamis.ir/dev/exam",
+  "Broad_BASE": "http://api.bamis.ir/dev/v1/broadcast",
+  "Provider_BASE": "http://api.bamis.ir/dev/v1/provider",
+  "Identity_BASE": "http://api.bamis.ir/v1/dev/Identity/",
+  "Front_Panel": "https://api.bamis.ir/server/"
+}

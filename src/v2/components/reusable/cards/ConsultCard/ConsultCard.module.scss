@@ -1,0 +1,91 @@
+@import "../../../../styles/Functions.module.scss";
+
+.ConsultCard {
+	border-radius: var(--var-border-radius-large) !important;
+	width: 180px;
+	min-height: 300px;
+	justify-content: space-between;
+	position: relative;
+
+	@media screen and (max-width: 960px) {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		width: 100%;
+		min-height: auto;
+		align-items: center;
+
+		.containerContent {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		img {
+			max-width: 150px;
+
+		}
+	}
+
+	img {
+		object-fit: scale-down;
+		object-position: center;
+	}
+
+	.online {
+		height: 2.4em;
+		width: 4.6em;
+		z-index: 100;
+		border-radius: 80px 0px 0px 0px / 80px 0px 0px 0px;
+		opacity: 0.7;
+		position: absolute;
+		right: 0px;
+		top: 0;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.content {
+		align-items: baseline;
+		text-align: right;
+		padding: .2em 1em;
+
+		.name {
+			font-weight: bold;
+			font-size: var(--var-font-size-normal) !important;
+
+		}
+
+		.type {
+			color: var(--var-space-cadet-light);
+			text-align: left;
+			margin-top: -0.1em;
+			font-size: var(--var-font-size-small) !important;
+
+		}
+
+		.rank {
+			color: var(--var-space-cadet);
+			margin: 0.2em 0;
+			font-size: var(--var-font-size-small) !important;
+		}
+	}
+
+	.link {
+		background-color: var(--var-byzantine-blue) !important;
+		color: vaR(--var-white);
+		@include cardButton;
+	}
+
+	.modal {
+		border: 1px solid;
+		border-color: var(--var-byzantine-blue) !important;
+		color: var(--var-byzantine-blue);
+
+		@include cardButton;
+	}
+
+}

@@ -1,0 +1,40 @@
+.AboutAppContainer {
+	position: relative;
+	margin-bottom: 20;
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 0;
+	}
+
+	.text {
+		margin-bottom: 15px;
+		line-height: 36px !important;
+		color: var(--var-space-cadet);
+		text-align: justify;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.mainText {
+	margin-bottom: 15px;
+	line-height: 36px !important;
+	color: var(--var-space-cadet);
+	text-align: justify;
+	width: 100%;
+
+	& p,
+	h1,
+	h2,
+	h3,
+	a {
+		font-weight: bold;
+		font-size: var(--var-font-size-normal);
+
+	}
+}
+
+.CheckCircleOutlineIcon {
+	vertical-align: middle;
+	color: var(--var-byzantine-blue);
+}

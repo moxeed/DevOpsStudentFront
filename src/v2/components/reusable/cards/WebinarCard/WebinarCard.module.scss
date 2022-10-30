@@ -1,0 +1,103 @@
+@import "../../../../styles/Functions.module.scss";
+
+
+.webinardetail_style {
+	border-radius: 0.5em !important;
+	font-size: var(--var-font-size-small) !important;
+	width: 9em;
+	height: 3em;
+}
+
+.WebinarCard {
+	border-radius: 0.5em !important;
+	width: 240px;
+	justify-content: space-between;
+	position: relative;
+
+	@media screen and (max-width: 960px) {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		width: 100%;
+		min-height: auto;
+		align-items: center;
+
+		.containerContent {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		img {
+			max-width: 230px;
+
+		}
+	}
+	@media screen and (max-width: 380px) {
+		flex-direction: column;
+
+		img {
+			max-width: 240px;
+		}
+	}
+
+	.tag {
+		height: 2.2em;
+		width: 11em;
+		z-index: 100;
+		border-radius: 80px 0px 0px 0px / 80px 0px 0px 0px;
+		position: absolute;
+		right: 2px;
+		top: 5px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: .7;
+
+		h6 {
+			color: var(--var-white) !important;
+			font-size: var(--var-font-size-small) !important;
+		}
+	}
+
+	img {
+		padding: 0.2em;
+		object-fit: contain;
+		height: 170px;
+		width: auto;
+		object-position: center top;
+	}
+
+	.name {
+		font-weight: bold;
+		font-size: var(--var-font-size-large) !important;
+	}
+
+	.button {
+		background-color: var(--var-byzantine-blue) !important;
+		color: vaR(--var-white);
+		@include cardButton;
+	}
+
+	.price {
+		@extend .webinardetail_style;
+		direction: rtl;
+		font-family: -apple-system, Kalameh, KalamehBold, KalamehThin, KalamehNum,
+			Ubuntu, MainKalameh, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+		color: var(--var-space-cadet) !important;
+		font-size: var(--var-font-size-small);
+		font-weight: bolder !important;
+	}
+
+	.teacher {
+		color: var(--var-text-secondary);
+		display: flex;
+		text-align: right;
+		padding-top: 0.5em;
+		padding: 0 1em;
+		justify-content: flex-end;
+		font-size: var(--var-font-size-small) !important;
+	}
+}

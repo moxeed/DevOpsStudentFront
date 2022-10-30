@@ -1,0 +1,132 @@
+@import url("./embla.css");
+
+/*
+Kalameh font are considered a proprietary software.
+To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+
+This set of fonts are used in this project under the license: VH7R3H
+*/
+@font-face {
+  font-family: Kalameh;
+  src: url("../assets/font/KalamehNoEn-Regular.ttf");
+}
+
+@font-face {
+  font-family: KalamehBold;
+  src: url("../assets/font/KalamehNoEn-Bold.ttf");
+}
+
+@font-face {
+  font-family: KalamehThin;
+  src: url("../assets/font/KalamehNoEn-Thin.ttf");
+}
+
+@font-face {
+  font-family: KalamehNum;
+  src: url("../assets/font/KalamehFaNum-Regular.ttf");
+}
+
+@font-face {
+  font-family: MainKalameh;
+  src: url("../assets/font/Kalameh-Regular.ttf");
+}
+
+html {
+  background-color: #f9fffb;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, Kalameh, KalamehBold, KalamehThin, KalamehNum,
+    Ubuntu, MainKalameh, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f9fffb;
+}
+
+.v2 * {
+  font-family: -apple-system, Kalameh, KalamehBold, KalamehThin, KalamehNum,
+    Ubuntu, MainKalameh, sans-serif !important;
+}
+
+.MuiPaper-root {
+  background-color: #f9fffb;
+}
+[dir="rtl"] .carousel-container {
+  direction: ltr;
+}
+.default_button {
+  background-color: #6ec7be !important;
+  border-radius: 10px !important;
+  color: #1e2756 !important;
+  font-size: 18px !important;
+  width: 150px;
+  height: 45px;
+  margin-bottom: 20px !important;
+  padding: 7px !important;
+}
+
+.outline_button {
+  background-color: white !important;
+  border-radius: 10px !important;
+  border: solid 1px #1e2756 !important;
+  color: #1e2756 !important;
+  font-size: 18px !important;
+  margin-bottom: 20px !important;
+  width: 150px;
+  height: 45px;
+  padding: 7px !important;
+}
+.list-style {
+  list-style: none;
+}
+
+.list-style li::before {
+  content: "\2022";
+  color: #ffe057;
+  font-weight: bold;
+  font-size: 35px;
+  display: inline-flex;
+  width: 0.5em;
+  align-items: center;
+  margin-top: 10px;
+}
+.list-style li {
+  display: flex;
+  height: 40px;
+  justify-content: right;
+  align-items: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 600px) {
+  .TitleBackground {
+    width: 45px;
+    height: 30px;
+  }
+  .mainTitle {
+    top: 4px;
+  }
+  .default_button,
+  .outline_button {
+    width: 80px;
+    height: 32px;
+    font-size: 12px !important;
+  }
+}
+
+.Toastify__toast-container {
+  z-index: 100000000;
+}

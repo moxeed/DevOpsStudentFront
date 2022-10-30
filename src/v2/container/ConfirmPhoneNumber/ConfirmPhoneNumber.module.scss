@@ -1,0 +1,38 @@
+@import "src/v2/styles/Functions.module.scss";
+
+@mixin inputStyle {
+	& > div {
+		border-radius: var(--var-border-radius-large);
+	}
+
+	margin: 0.8em 0;
+	border-radius: var(--var-border-radius-large) !important;
+}
+
+.ConfirmForm {
+	padding: 1.4em;
+	font-weight: bold;
+
+	.ConfirmTitle {
+		font-size: var(--var-font-size-large);
+		margin-bottom: 1em;
+		font-family: Kalameh !important;
+	}
+
+	.ConfirmButton {
+		background-color: var(--var-byzantine-blue);
+		color: var(--var-white);
+		font-size: var(--var-font-size-normal);
+		margin-inline: 1em;
+		font-family: Kalameh !important;
+	}
+	.ConfirmOutlineButton {
+		background-color: var(--var-white);
+		color: var(--var-byzantine-blue);
+		font-size: var(--var-font-size-normal);
+		font-weight: bold;
+		border: 2px solid var(--var-byzantine-blue);
+		height: 2.6em;
+		font-family: Kalameh !important;
+	}
+}

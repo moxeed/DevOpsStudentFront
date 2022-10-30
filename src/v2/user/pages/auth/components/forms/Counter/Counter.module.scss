@@ -1,0 +1,9 @@
+@import "../../../../../../styles/Functions.module.scss";
+
+.inputRounded {
+  @include inputRounded;
+}
+
+.forgotPassword {
+  @include forgotPassword;
+}

@@ -1,0 +1,40 @@
+@mixin ButtonBase {
+    width: max-content;
+    height: min-content;
+    overflow: hidden;
+    min-width: 6em !important;
+    max-width: 8em;
+    max-height: 2.5em;
+    width: 100%;
+    font-size: var(--var-font-size-small) !important;
+    min-height: 1em;
+    margin: 0.5em;
+
+    @media screen and (min-width: 585px) {
+        min-width: 6em !important;
+        max-width: 10em;
+        max-height: 4em;
+        min-height: 2em;
+        font-size: var(--var-font-size-normal) !important;
+
+    }
+}
+
+.BlueButton {
+    @include ButtonBase;
+    color: var(--var-white) !important;
+    background: var(--var-byzantine-blue) !important;
+    border-radius: var(--var-border-radius) !important;
+    font-family: -apple-system, Kalameh, KalamehBold, KalamehThin, KalamehNum,
+        Ubuntu, MainKalameh, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+.OutlineBlueButton {
+    @include ButtonBase;
+    color: var(--var-byzantine-blue) !important;
+    background: var(--var-white) !important;
+    border: 1px solid var(--var-byzantine-blue) !important;
+    font-family: -apple-system, Kalameh, KalamehBold, KalamehThin, KalamehNum,
+        Ubuntu, MainKalameh, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+
+}
