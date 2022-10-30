@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@babel/eslint-parser",
+  "globals": {
+    "process": true
+  },
+  "extends": "plugin:react/recommended",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": "off",
+    "no-console": "off",
+    "no-unused-vars": [
+      "warn",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ],
+    "no-inline-comments": "error",
+    "no-await-in-loop": "error",
+    "no-debugger": "error",
+    "no-dupe-else-if": "error",
+    "no-duplicate-imports": "warn",
+    "no-duplicate-case": "error",
+    "no-import-assign": "error",
+    "no-obj-calls": "warn",
+    "no-unsafe-finally": "error",
+    "default-case": "error",
+    "eqeqeq": "error",
+    "no-extra-semi": "warn",
+    "no-useless-return": "warn",
+    "no-var": "warn",
+    "prefer-const": "warn",
+    "no-multi-spaces": "warn",
+    "no-undef": "error",
+    "react/jsx-key": "warn",
+    "react/no-unescaped-entities": "warn"
+  }
+}
